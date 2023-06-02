@@ -1,38 +1,139 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 110vh;
+  background-color: #1f2125;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.566);
+}
+
+.info_div {
+  background-color: #1a191c;
+  max-width: 50%;
+  height: 96vh;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.397);
+  border-radius: 0.6rem;
+}
+.profile_pic {
+  width: 100%;
+  height: 16rem;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+.name_text {
+  font-size: 1.3rem;
+  color: whitesmoke;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.frotend_text {
+  font-size: 0.8rem;
+  color: rgba(245, 245, 245, 0.452);
+  text-align: center;
+}
+.website_text {
+  font-size: 0.7rem;
+  color: rgba(245, 245, 245, 0.29);
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn_div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.linkedin_btn,
+.Email_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+.linkedin_icon,
+.email_icon {
+  display: flex;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.Email_btn {
+  border: none;
+  width: 15vw;
+  height: 5vh;
+  border-radius: 0.3rem;
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+.linkedin_btn {
+  border: none;
+  width: 15vw;
+  height: 5vh;
+  border-radius: 0.3rem;
+  background-color: #4d88da;
+  color: whitesmoke;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about_div,
+.interest_div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about_div > p {
+  color: whitesmoke;
+  font-size: 0.7em;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.interest_div > p {
+  color: whitesmoke;
+  font-size: 0.7em;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.about_title,
+.Interest_title {
+  color: whitesmoke;
+  font-size: 0.8rem;
+  margin-left: 0.4rem;
+}
+
+.about_title {
+  margin-top: 1.5rem;
+}
+
+.footer_div {
+  margin-top: 2rem;
+  width: 100%;
+  height: 8vh;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  background-color: #0a0b0c;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.twitter_div,
+.facebook_div,
+.instagramr_div,
+.github_div {
+  margin-top: 0.8rem;
+}
+
+.twitter_icon,
+.facebook_icon,
+.instagram_icon,
+.github_icon {
+  width: 1.3rem;
 }
